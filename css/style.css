@@ -141,6 +141,10 @@ article {
 }
 
 /* Table */
+.table-container {
+    overflow: auto;
+}
+
 table {
     max-width: 100%;
 }
