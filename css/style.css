@@ -24,12 +24,12 @@ nav a:hover, footer a:hover {
     border-bottom: 3px solid #FFCB05;
 }
 
+/* Skip to Main Default */
 .skip {
     background-color: #FFFFFF;
     color: #00274C;
 }
 
-/* Skip to Main Default */
 .skip a {
     position: absolute;
     top: -65px;
