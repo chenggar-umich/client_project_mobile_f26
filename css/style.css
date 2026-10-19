@@ -29,6 +29,8 @@ nav a:hover, footer a:hover {
     position: absolute;
     top: -65px;
     z-index: 1000;
+    background-color: #FFFFFF;
+    color: #00274C;
 }
 
 /* Skip to Main Focus */
