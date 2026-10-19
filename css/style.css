@@ -12,8 +12,14 @@ body {
     outline: 3px solid #FFCB05;
 }
 
-/* White and Yellow Underline when Hover */
+/* Black and Yellow Underline when Hover */
 a:hover {
+    color: #000000;
+    border-bottom: 3px solid #FFCB05;
+}
+
+/* White and Yellow Underline when Hover (nav, footer) */
+nav a:hover, footer a:hover {
     color: #FFFFFF;
     border-bottom: 3px solid #FFCB05;
 }
@@ -46,6 +52,22 @@ h2 {
     line-height: 1.5;
 }
 
+h3 {
+    font-size: 20px;
+    line-height: 1.35;
+}
+
+/* lists */
+li {
+    margin-left: 20px;
+}
+
+/* Images */
+img {
+    max-width: 100%;
+    margin: 10px 0;
+}
+
 /* Header */
 header {
     background-color: #00274C;
@@ -63,12 +85,14 @@ header .logo-container {
 
 header img {
     max-height: 50px;
+    margin: 0 0 0 0;
 }
 
 /* Navigation Bar */
 nav li {
-    display: inline;
-    padding-right: 20px;
+    display: inline-block;
+    padding: 0 0 0 20px;
+    margin: 5px 0;
 }
 
 nav {
@@ -84,29 +108,50 @@ nav a {
     text-decoration: none;
 }
 
-nav ul {
-    padding: 0 0 0 20px;
-    margin: 10px 0;
-}
-
 /* Grid Container (Main) */
-.container {
+.grid-container {
     display: grid;
+    grid-template-columns: repeat(10, minmax(0, 1fr));
+    gap: 10px;
+
 }
 
 /* Sections */
-section a:hover {
-    color: #000000;
-    border-bottom: 3px solid #FFCB05;
-}
-
-section {
+.grid-container > :first-child {
     grid-column: 1 / -1;
+    margin: 20px 20px;
 }
 
-/* Images */
-img {
-    max-height: 350px;
+section, aside {
+    grid-column: 2 / -2;
+    margin: 20px 0;
+}
+
+/* Articles */
+article {
+   margin: 20px 0; 
+}
+
+/* Table */
+table {
+    max-width: 100%;
+}
+
+caption {
+    font-weight: bold;
+    text-align: center;
+    margin: 5px 0;
+}
+
+th, td {
+    border: 1px solid #00274C;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #2F65A7;
+    color: #FFFFFF;
 }
 
 /* Footer */
@@ -124,6 +169,5 @@ footer a {
 }
 
 footer p {
-    margin-bottom: 0;
-    padding-bottom: 18px;
+    padding: 18px 0;
 }
